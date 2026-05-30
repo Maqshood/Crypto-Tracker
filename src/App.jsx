@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from './pages/home';
+import HomePage from './pages/Home';
 import DashBoardPage from './pages/DashBoard';
 import CoinPage from './pages/Coin';
 import ComparePage from "./pages/Compare";
