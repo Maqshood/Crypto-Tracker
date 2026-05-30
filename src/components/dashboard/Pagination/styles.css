@@ -1,0 +1,54 @@
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.custom-pagination .MuiPagination-ul {
+  gap: 8px;
+}
+
+.custom-pagination .MuiPaginationItem-root {
+  color: #e0e0e0;
+  background-color: #1e293b;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination .MuiPaginationItem-root:hover {
+  background-color: #2563eb;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.custom-pagination .Mui-selected {
+  background-color: #2563eb !important;
+  color: white !important;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.custom-pagination .MuiPaginationItem-previousNext {
+  background-color: #0f172a;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .pagination-container {
+    margin-top: 15px;
+    padding: 10px;
+  }
+
+  .custom-pagination .MuiPagination-ul {
+    gap: 4px; /* ✅ tighter gap on mobile */
+  }
+
+  .custom-pagination .MuiPaginationItem-root {
+    font-size: 0.75rem; /* ✅ smaller text */
+    min-width: 28px;    /* ✅ smaller buttons */
+    height: 28px;
+  }
+}

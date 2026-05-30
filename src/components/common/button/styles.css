@@ -1,0 +1,48 @@
+.btn {
+  background: linear-gradient(135deg, #3a80e9, #2f6ed3);
+  color: white; /* ✅ keep white - always on blue background */
+  padding: 0.55rem 1.4rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--blue);
+  cursor: pointer;
+  text-align: center;
+  min-width: 100px;
+  text-transform: capitalize;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #2f6ed3, #1f5bc4);
+  box-shadow: 0 4px 14px rgba(58, 128, 233, 0.4);
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.outlined-btn {
+  background-color: transparent; 
+  border: 2px solid var(--blue);
+  color: var(--white); 
+  padding: 0.55rem 1.4rem;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+  min-width: 150px;
+  text-transform: capitalize;
+}
+
+.outlined-btn:hover {
+  background: linear-gradient(135deg, #2f6ed3, #1f5bc4);
+  color: white; 
+  box-shadow: 0 4px 14px rgba(58, 128, 233, 0.4);
+  transform: translateY(-1px);
+}

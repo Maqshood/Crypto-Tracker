@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  align-items: center;
+  position: sticky;
+  padding: 1.5rem 3rem;
+  background-color: var(--black);
+  z-index: 1000; /* ✅ stays above everything */
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link {
+  color: var(--grey);
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--white);
+  transition: all 0.3s;
+}
+
+.mobile-drawer {
+  display: none;
+}
+
+/* Tablet */
+@media only screen and (max-width: 800px) {
+  .navbar {
+    padding: 1rem 1.5rem; /* ✅ slightly reduced */
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .links {
+    display: none; /* ✅ hide links, show drawer */
+  }
+
+  .mobile-drawer {
+    display: block;
+  }
+
+  .drawer-div {
+    width: 40vw;
+    height: 100vh;
+    background-color: var(--black);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .navbar {
+    padding: 1rem; /* ✅ tighter on mobile */
+  }
+
+  .logo {
+    font-size: 0.95rem;
+  }
+
+  .drawer-div {
+    width: 70vw; /* ✅ wider drawer on small screens */
+  }
+}

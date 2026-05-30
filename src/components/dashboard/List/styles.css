@@ -1,0 +1,144 @@
+.List-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  margin: 1.5rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.List-row:hover {
+  background-color: var(--darkgrey);
+  transition: all;
+}
+
+.List-row td {
+  text-align: left;
+  width: 15%;
+}
+
+.td-image {
+  width: 3rem !important;
+  margin-right: 1.5rem;
+}
+
+.td-center-align {
+  text-align: center;
+}
+
+.td-right-align {
+  text-align: right;
+}
+
+.mobile-td-mkt {
+  display: none;
+}
+
+.list-link {
+  text-decoration: none;
+  color: inherit;
+  width: 23%;
+}
+
+.list-link:visited {
+  color: inherit;
+}
+
+.watchlist-icon {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.watchlist-icon.red {
+  color: var(--red);
+}
+
+.watchlist-icon-container {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Hide icon chip on tablet */
+@media only screen and (max-width: 1000px) {
+  .td-icon {
+    display: none;
+  }
+
+  .td-total-volume {
+    display: none;
+  }
+
+  .List-row {
+    gap: 1.5rem; /* ✅ reduce gap on tablet */
+    margin: 1rem;
+  }
+}
+
+/* Tablet - swap market cap columns */
+@media only screen and (max-width: 800px) {
+  .desktop-td-mkt {
+    display: none;
+  }
+
+  .mobile-td-mkt {
+    display: block;
+  }
+
+  .List-row {
+    gap: 1rem;
+    margin: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .coin-symbol {
+    font-size: 0.95rem;
+  }
+
+  .coin-name {
+    font-size: 0.8rem;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  .List-row {
+    gap: 0.5rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .td-image {
+    width: 2rem !important;
+    margin-right: 0.5rem;
+  }
+
+  .coin-logo {
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .coin-symbol {
+    font-size: 0.85rem;
+  }
+
+  .coin-name {
+    display: none; /* ✅ hide name on very small screens, keep symbol */
+  }
+
+  .price-chip {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    min-width: auto;
+  }
+
+  .coin-price {
+    font-size: 0.9rem;
+  }
+
+  .total-volume {
+    font-size: 0.8rem;
+  }
+}
