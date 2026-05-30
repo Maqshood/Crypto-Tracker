@@ -1,15 +1,15 @@
 import React from "react";
 import "./styles.css";
 import TemporaryDrawer from "./drawer";
-import Button from "../Button";
+import Button from "../button"
 import { Link } from "react-router-dom";
-import { useTheme } from "../../../ThemeContext.jsx"; // ✅ import
+import { useTheme } from "../../../ThemeContext.jsx"; 
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import IconButton from "@mui/material/IconButton";
 
 function Header() {
-  const { theme, toggleTheme } = useTheme(); // ✅ get theme and toggle
+  const { theme, toggleTheme } = useTheme(); 
 
   return (
     <div className="navbar">
@@ -17,7 +17,7 @@ function Header() {
         CryptoTracker<span style={{ color: "var(--blue)" }}>.</span>
       </h1>
       <div className="links">
-        {/* ✅ Theme toggle button */}
+       
         <IconButton onClick={toggleTheme}>
           {theme === "dark"
             ? <LightModeRoundedIcon style={{ color: "var(--white)" }} />
