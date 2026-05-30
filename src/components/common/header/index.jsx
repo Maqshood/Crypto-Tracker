@@ -3,7 +3,7 @@ import "./styles.css";
 import TemporaryDrawer from "./drawer";
 import Button from "../Button";
 import { Link } from "react-router-dom";
-import { useTheme } from "../../../ThemeContext"; // ✅ import
+import { useTheme } from "../../../ThemeContext.jsx"; // ✅ import
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import IconButton from "@mui/material/IconButton";

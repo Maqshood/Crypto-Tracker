@@ -3,7 +3,7 @@ import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import { useNavigate } from "react-router-dom";
-import { useTheme } from "../../../ThemeContext"; // ✅ import
+import { useTheme } from "../../../ThemeContext.jsx"; // ✅ import
 import LightModeRoundedIcon from "@mui/icons-material/LightModeRounded";
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 
